@@ -1,0 +1,113 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: black;
+  color: yellow;
+}
+
+.fondo {
+  background-image: url(../assets/nonas.jfif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50vh;
+}
+
+.audio { 
+  width: 100%;
+  box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+  border-radius: 90px;
+  transform: scale(1.05);
+}
+
+.pacman {
+  position: relative;
+  animation: pacman 10s infinite;
+}
+
+p{
+  text-align: center;
+}
+
+@keyframes pacman {
+  0%, 21%  {top: 240px; left: 120px; rotate:0deg; background-color: rgb(45, 192, 26);}
+  28% {top: 160px; left: 120px; rotate: -90deg; background-color: blue;}
+  34% {top: 160px; left: 200px; rotate: 0deg; background-color: rgb(192, 26, 26);}
+  40% {top: 195px; left: 203px; background-color: white;}
+  45% {top: 195px; left: 318px; rotate: -90deg; background-color: royalblue;}
+  50% {top: 156px; left: 318px; rotate: 0deg;  background-color: rosybrown;}
+  55% {top: 156px; left: 353px; rotate: -90deg; background-color: rebeccapurple;}
+  60% {top: 120px; left: 356px; rotate: 0deg; background-color: teal;}
+  66% {top: 120px; left: 475px; rotate: 0deg; background-color: tomato;}
+  72% {top: 155px; left: 475px; rotate: 0deg; background-color: yellow;}
+  78% {top: 155px; left: 515px; rotate: -90deg; background-color: orangered;}
+  82% {top: 195px; left: 515px; rotate: 0deg; background-color: orchid;}
+  88% {top: 195px; left: 630px; rotate: 0deg; background-color: olive;}
+  96% {top: 155px; left: 630px; rotate: 0deg; background-color: aqua;}
+  97% {top: 155px; left: 710px; rotate: 0px; background-color: salmon;}
+  100% {top: 240px; left: 710px; rotate: 0px; background-color: fuchsia;}
+}
+
+/*Telefono movil*/
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    body {
+    background-color: #d12020;
+    }
+    .alturapacman {
+        width: 14px;
+        height: 14px;
+    }
+
+  @keyframes pacman {
+    0% {top:85px; left: 31px; background-color: #20cbd1;}
+    5% {top:40px; left: 31px;background-color: #3dc141;}
+    10% {top:40px; left: 61px; background-color: #d12020;}
+    15% {top:98px; left:61px; background-color: #e8af45;}
+    20% {top:98px; left: 104px; background-color:#FFB8FF}
+    25% {top: 113px; left:104px; background-color:aliceblue;}
+    30% {top: 113px; left:120px; background-color:aqua;}
+    35% {top: 128px; left: 120px; background-color:black;}
+    40% {top: 128px; left: 164px; background-color:blue;}
+    45% {top: 113px; left: 164px; background-color:blueviolet;}
+    50% {top: 113px; left: 178px; background-color:brown;}
+    55% {top: 98px; left: 178px; background-color:chartreuse;}
+    60% {top: 98px; left:222px; background-color:coral;}
+    65% {top: 40px; left:222px; background-color: cornflowerblue;}
+    70% {top: 40px; left:252px; background-color:crimson;}
+    75% {top: 85px; left:252px; background-color:coral;}
+}
+}
+@media screen and (min-width: 375px) and (max-width: 457px) {
+
+  body {
+  background-color: #d12020;
+  }
+  .alturapacman {
+      width: 20px;
+      height: 20px;
+  }
+
+  @keyframes pacman {
+    0% {top:90px; left: 36px; background-color: #20cbd1;}
+    5% {top:50px; left: 36px;background-color: #3dc141;}
+    10% {top:50px; left: 70px; background-color: #d12020;}
+    15% {top:115px; left:70px; background-color: #e8af45;}
+    20% {top:115px; left: 123px; background-color:#FFB8FF}
+    25% {top: 133px; left:123px; background-color:aqua;}
+    35% {top: 133px; left: 139px; background-color:black;}
+    40% {top: 150px; left: 139px; background-color:blue;}
+    45% {top: 150px; left: 190px; background-color:blueviolet;}
+    50% {top: 135px; left: 190px; background-color:brown;}
+    55% {top: 135px; left: 210px; background-color:chartreuse;}
+    60% {top: 120px; left:210px; background-color:coral;}
+    65% {top: 120px; left:260px; background-color: cornflowerblue;}
+    70% {top: 50px; left:260px; background-color:crimson;}
+    75% {top: 50px; left:295px; background-color:coral;}
+    80% {top: 90px; left:295px; background-color:purple;}
+}
+}
