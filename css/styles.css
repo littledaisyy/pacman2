@@ -8,6 +8,7 @@ body{
   height: 100vh;
   background-color: black;
   color: yellow;
+  display: flexbox;
 }
 
 .fondo {
@@ -26,7 +27,7 @@ body{
 
 .pacman {
   position: relative;
-  animation: pacman 10s infinite;
+  animation: pacman 20s infinite;
 }
 
 p{
@@ -53,65 +54,121 @@ p{
 }
 
 /*Telefono movil desgraciade*/
-@media screen and (min-width:570px) and (max-width:576px) {
 
-    body {
+@media screen and (min-width: 320px) and (max-width: 324px) {
+  body {
     background-color: #ce20d1;
     }
 
     .alturapacman {
-        width: 20px;
-        height: 20px;
+        width: 14px;
+        height: 14px;
     }
 
+    @keyframes pacman {
+      0% {top:85px; left: 31px; background-color: #20cbd1;}
+      5% {top:40px; left: 31px;background-color: #3dc141;}
+      10% {top:40px; left: 61px; background-color: #d12020;}
+      15% {top:98px; left:61px; background-color: #e8af45;}
+      20% {top:98px; left: 104px; background-color:#FFB8FF}
+      25% {top: 113px; left:104px; background-color:aliceblue;}
+      30% {top: 113px; left:120px; background-color:aqua;}
+      35% {top: 128px; left: 120px; background-color:black;}
+      40% {top: 128px; left: 163px; background-color:blue;}
+      45% {top: 113px; left: 163px; background-color:blueviolet;}
+      50% {top: 113px; left: 178px; background-color:brown;}
+      55% {top: 98px; left: 178px; background-color:chartreuse;}
+      60% {top: 98px; left:222px; background-color:coral;}
+      65% {top: 40px; left:222px; background-color: cornflowerblue;}
+      70% {top: 40px; left:252px; background-color:crimson;}
+      75% {top: 85px; left:252px; background-color:coral;}
+    }
+  }
+
+  @media screen and (min-width: 325px) and (max-width: 329px) {
+    body {
+      background-color: #ce20d1;
+      }
+  
+      .alturapacman {
+          width: 14px;
+          height: 14px;
+      }
+
+      @keyframes pacman {
+        0% {top:80px; left:33px; background-color: #20cbd1;}
+        5% {top:40px; left:33px;background-color: #3dc141;}
+        10% {top:40px; left:63px; background-color: #d12020;}
+        15% {top:101px; left:63px; background-color: #e8af45;}
+        20% {top:101px; left:107px; background-color:#FFB8FF}
+        25% {top:116px; left:107px; background-color:aliceblue;}
+        30% {top:116px; left:122px; background-color:aqua;}
+        35% {top:131px; left:122px; background-color:black;}
+        40% {top:131px; left:167px; background-color:blue;}
+        45% {top:116px; left:167px; background-color:blueviolet;}
+        50% {top:116px; left:182px; background-color:brown;}
+        55% {top:100px; left:182px; background-color:chartreuse;}
+        60% {top:100px; left:227px; background-color:coral;}
+        65% {top:40px; left:227px; background-color: cornflowerblue;}
+        70% {top:40px; left:258px; background-color:crimson;}
+        75% {top:80px; left:258px; background-color:coral;}
+      }
+    }
+      
+  @media screen and (min-width: 330px) and (max-width: 335px){
+    .alturapacman {
+      width: 14px;
+      height: 14px;
+  }
+  
   @keyframes pacman {
-    0% {top:160px; left:68px; background-color: #20a5d1;}
-    5% {top:82px; left:68px; background-color: #d12020;}
-    10% {top:82px; left:120px; background-color: #5ed120;}
-    15% {top:187px; left:120px; background-color: #d12087;}
-    20% {top:187px; left:200px; background-color: #2920d1;}
-    25% {top:165px; left:152px; background-color: #d1cb20;}
-    30% {top:165px; left:174px; background-color: #32d120;}
-    35% {top:187px; left:174px; background-color: #d16d20;}
-    40% {top:187px; left:236px; background-color: #f700ff;}
-    45% {top:165px; left:236px; background-color: #497483;}
-    50% {top:165px; left:258px; background-color: #20a5d1;}
-    55% {top:145px; left:258px; background-color: #431313;}
-    60% {top:145px; left:320px; background-color: #000000;}
-    65% {top:60px; left:320px; background-color: #ffffff;}
-    70% {top:60px; left:363px; background-color: #9d42b9;}
-    75% {top:120px; left:363px; background-color: #695a70;}
+    0% {top:160px; left:67px; background-color: #20a5d1;}
+    5% {top:80px; left:67px; background-color: #d12020;}
+    10% {top:80px; left:119px; background-color: #5ed120;}
+    15% {top:186px; left:119px; background-color: #d12087;}
+    20% {top:186px; left:197px; background-color: #0d00ff;}
+    25% {top:212px; left:197px; background-color: #d1cb20;}
+    30% {top:212px; left:224px; background-color: #32d120;}
+    35% {top:238px; left:224px; background-color: #d16d20;}
+    40% {top:238px; left:302px; background-color: #f700ff;}
+    45% {top:212px; left:302px; background-color: #77858a;}
+    50% {top:212px; left:328px; background-color: #20a5d1;}
+    55% {top:185px; left:328px; background-color: #773535;}
+    60% {top:185px; left:408px; background-color: #000000;}
+    65% {top:80px; left:408px; background-color: #ffffff;}
+    70% {top:80px; left:460px; background-color: #9d42b9;}
+    75% {top:160px; left:460px; background-color: #695a70;}
 }
 }
 
-@media screen and (min-width: 577px) and (max-width: 579px) {
+@media screen and (min-width: 575px) and (max-width: 576px) {
 
   body {
     background-color: #20a5d1;
     }
-  
+
     .alturapacman {
         width:20px;
         height:20px;
     }
 
   @keyframes pacman {
-    0% {top:120px; left:50px}
-    5% {top:61px; left:50px}
-    10% {top:61px; left:92px}
-    15% {top:147px; left:92px}
-    20% {top:147px; left:155px}
-    25% {top:167px; left:155px}
-    30% {top:167px; left:175px}
-    35% {top:188px; left:175px}
-    40% {top:188px; left:238px}
-    45% {top:165px; left:238px}
-    50% {top:165px; left:260px}
-    55% {top:145px; left:260px}
-    60% {top:145px; left:322px}
-    65% {top:62px; left:322px}
-    70% {top:62px; left:365px}
-    75% {top:120px; left:365px}
+    0% {top:160px; left:68px; background-color: #20a5d1;}
+    5% {top:81px; left:68px; background-color: #d12020;}
+    10% {top:81px; left:121px; background-color: #5ed120;}
+    15% {top:187px; left:121px; background-color: #d12087;}
+    20% {top:187px; left:200px; background-color: #0d00ff;}
+    25% {top:214px; left:200px; background-color: #d1cb20;}
+    30% {top:214px; left:226px; background-color: #32d120;}
+    35% {top:239px; left:226px; background-color: #d16d20;}
+    40% {top:239px; left:305px; background-color: #f700ff;}
+    45% {top:213px; left:305px; background-color: #77858a;}
+    50% {top:213px; left:332px; background-color: #20a5d1;}
+    55% {top:187px; left:332px; background-color: #773535;}
+    60% {top:187px; left:410px; background-color: #000000;}
+    65% {top:81px; left:410px; background-color: #ffffff;}
+    70% {top:81px; left:464px; background-color: #9d42b9;}
+    75% {top:160px; left:464px; background-color: #695a70;}
 }
 }
 
@@ -165,9 +222,9 @@ p{
     20% {top:160px; left:158px; background-color: rgb(255, 0, 0);}
     25% {top:170px; left:158px; background-color: rgb(255, 166, 0);}
     30% {top:170px; left:177px; background-color: rgb(106, 255, 0);}
-    35% {top:195px; left:177px; background-color: rgb(0, 153, 255);}
-    40% {top:195px; left:245px; background-color: rgb(0, 4, 255);}
-    45% {top:170px; left:245px; background-color: rgb(85, 0, 255);}
+    35% {top:196px; left:177px; background-color: rgb(0, 153, 255);}
+    40% {top:196px; left:245px; background-color: rgb(0, 4, 255);}
+    45% {top:170px; left:270px; background-color: rgb(85, 0, 255);}
     50% {top:170px; left:270px; background-color: rgb(217, 0, 255);}
     55% {top:150px; left:265px; background-color:darkgrey}
     60% {top:150px; left:330px; background-color: rgb(255, 0, 81);}
