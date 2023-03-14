@@ -26,7 +26,7 @@ body{
 
 .pacman {
   position: relative;
-  animation: pacman 10s infinite;
+  animation: pacman 7s infinite;
 }
 
 p{
@@ -52,12 +52,13 @@ p{
   100% {top: 240px; left: 710px; rotate: 0px; background-color: fuchsia;}
 }
 
-/*Telefono movil*/
-@media screen and (min-width: 320px) and (max-width: 374px) {
+/*Telefono movil desgraciade*/
+@media screen and (min-width: 320px) and (max-width: 324px) {
 
     body {
-    background-color: #d12020;
+    background-color: #ce20d1;
     }
+
     .alturapacman {
         width: 14px;
         height: 14px;
@@ -78,18 +79,50 @@ p{
     55% {top: 98px; left: 178px; background-color:chartreuse;}
     60% {top: 98px; left:222px; background-color:coral;}
     65% {top: 40px; left:222px; background-color: cornflowerblue;}
-    70% {top: 40px; left:252px; background-color:crimson;}
-    75% {top: 85px; left:252px; background-color:coral;}
+    70% {top: 40px; left:254px; background-color:crimson;}
+    75% {top: 85px; left:254px; background-color:coral;}
 }
 }
-@media screen and (min-width: 375px) and (max-width: 457px) {
+
+@media screen and (min-width: 325px) and (max-width: 328px) {
+
+  body {
+    background-color: #20a5d1;
+    }
+  
+    .alturapacman {
+        width: 14px;
+        height: 14px;
+    }
+
+  @keyframes pacman {
+    0% {top:80px; left:33px; background-color: #20cbd1;}
+    5% {top:40px; left:33px;background-color: #3dc141;}
+    10% {top:40px; left:63px; background-color: #d12020;}
+    15% {top:101px; left:63px; background-color: #e8af45;}
+    20% {top:101px; left:107px; background-color:#FFB8FF}
+    25% {top:116px; left:107px; background-color:aliceblue;}
+    30% {top:116px; left:122px; background-color:aqua;}
+    35% {top:129px; left:122px; background-color:black;}
+    40% {top:129px; left:167px; background-color:blue;}
+    45% {top:115px; left:167px; background-color:blueviolet;}
+    50% {top:115px; left:182px; background-color:brown;}
+    55% {top:100px; left:182px; background-color:chartreuse;}
+    60% {top:100px; left:227px; background-color:coral;}
+    65% {top:40px; left:227px; background-color: cornflowerblue;}
+    70% {top:40px; left:258px; background-color:crimson;}
+    75% {top:80px; left:258px; background-color:coral;}
+}
+}
+
+@media screen and (min-width: 329px) and (max-width: 335px) {
 
   body {
   background-color: #d12020;
   }
   .alturapacman {
-      width: 20px;
-      height: 20px;
+      width: 14px;
+      height: 14px;
   }
 
   @keyframes pacman {
@@ -107,7 +140,6 @@ p{
     60% {top: 120px; left:210px; background-color:coral;}
     65% {top: 120px; left:260px; background-color: cornflowerblue;}
     70% {top: 50px; left:260px; background-color:crimson;}
-    75% {top: 50px; left:295px; background-color:coral;}
-    80% {top: 90px; left:295px; background-color:purple;}
+
 }
 }
